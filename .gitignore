@@ -1,0 +1,180 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# ----------------------------
+# Environments
+# ----------------------------
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+*.env
+*.venv
+
+# ----------------------------
+# Django
+# ----------------------------
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+# Static files collected by collectstatic
+static/
+# Local settings file
+local_settings.py
+# Migration cache
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# ----------------------------
+# Pytest
+# ----------------------------
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+# Profiling data
+.prof
+
+# ----------------------------
+# IDEs
+# ----------------------------
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+out/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ----------------------------
+# OS Files
+# ----------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ----------------------------
+# Node / Frontend
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+dist/
+build/
+
+# ----------------------------
+# VS Code / Editor Settings
+# ----------------------------
+*.swp
+*~
+.project
+.settings/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ----------------------------
+# Docker
+# ----------------------------
+*.dockerignore
+Dockerfile*
+docker-compose*.yml
+.env.docker
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# ----------------------------
+# Logs & Reports
+# ----------------------------
+*.log
+*.pot
+*.mo
+*.coverage
+htmlcov/
+.tox/
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ----------------------------
+# Secrets
+# ----------------------------
+*.key
+*.pem
+*.crt
+*.env
+.env.*
+
+# ----------------------------
+# Misc
+# ----------------------------
+*.bak
+*.swp
+*.tmp
+*.orig
+*.old
+*.backup
