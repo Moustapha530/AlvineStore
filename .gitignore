@@ -36,10 +36,6 @@ venv.bak/
 *.sqlite3
 db.sqlite3
 db.sqlite3-journal
-media/
-staticfiles/
-# Static files collected by collectstatic
-static/
 # Local settings file
 local_settings.py
 # Migration cache
