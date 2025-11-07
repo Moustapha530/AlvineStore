@@ -1,0 +1,34 @@
+:root {
+
+  --primary-black: #000000;
+  --pure-white: #FFFFFF;
+  --apple-gray-light: #F5F5F7;
+  --apple-gray-medium: #86868B;
+  --apple-gray-dark: #424245;
+  
+
+  --silver-accent: #E8E8ED;
+  --space-gray: #8D8D93;
+  --gold-accent: #F5E3C7;
+  --graphite: #545457;
+  
+
+  --text-primary: #1D1D1F;
+  --text-secondary: #515154;
+  --text-tertiary: #86868B;
+  --background-primary: #FFFFFF;
+  --background-secondary: #FBFBFD;
+  
+
+  --header-bg: #FFFFFF;
+  --footer-bg: #F5F5F7;
+  --border-color: #D2D2D7;
+  --accent-color: #007AFF;
+  --success-color: #34C759;
+  
+
+  --top-seller-bg: #000000;
+  --top-seller-text: #FFFFFF;
+  --trust-badge: #34C759;
+  --client-count: #515154;
+}
