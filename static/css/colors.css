@@ -1,4 +1,4 @@
-:root {
+[data-theme="light"] {
 
   --primary-black: #000000;
   --pure-white: #FFFFFF;
@@ -12,23 +12,68 @@
   --gold-accent: #F5E3C7;
   --graphite: #545457;
   
-
   --text-primary: #1D1D1F;
   --text-secondary: #515154;
   --text-tertiary: #86868B;
   --background-primary: #FFFFFF;
   --background-secondary: #FBFBFD;
   
-
+  /* Element colors */
   --header-bg: #FFFFFF;
   --footer-bg: #F5F5F7;
   --border-color: #D2D2D7;
   --accent-color: #007AFF;
   --success-color: #34C759;
   
-
+  /* Section colors */
   --top-seller-bg: #000000;
   --top-seller-text: #FFFFFF;
   --trust-badge: #34C759;
   --client-count: #515154;
+  --card-bg: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+
+  --primary-black: #000000;
+  --pure-white: #FFFFFF;
+  --apple-gray-light: #1D1D1F;
+  --apple-gray-medium: #86868B;
+  --apple-gray-dark: #424245;
+  
+
+  --silver-accent: #2C2C2E;
+  --space-gray: #8D8D93;
+  --gold-accent: #F5E3C7;
+  --graphite: #545457;
+  
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1A6;
+  --text-tertiary: #686870;
+  --background-primary: #000000;
+  --background-secondary: #1D1D1F;
+  
+
+  --header-bg: #000000;
+  --footer-bg: #1D1D1F;
+  --border-color: #38383A;
+  --accent-color: #0A84FF;
+  --success-color: #30D158;
+  
+
+  --top-seller-bg: #FFFFFF;
+  --top-seller-text: #000000;
+  --trust-badge: #30D158;
+  --client-count: #A1A1A6;
+  --card-bg: #1D1D1F;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+
+:root {
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
 }
