@@ -1,0 +1,101 @@
+<!-- templates/header.html -->
+<header class="header bg-white border-bottom py-3" data-theme="light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="{% url 'accueil' %}">
+                <div class="logo-container d-flex align-items-center">
+                    <div class="iphone-icon me-2"></div>
+                    <div class="logo-text">
+                        <div class="store-name fw-bold fs-4 text-dark">ALVIN STORE</div>
+                        <div class="slogan text-muted small">Premium Smartphones</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Burger Menu pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="{% url 'accueil' %}">
+                            <i class="fas fa-home me-1"></i>Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="{% url 'produits' %}">
+                            <i class="fas fa-mobile-alt me-1"></i>Produits
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="{% url 'iphone' %}">
+                            <i class="fab fa-apple me-1"></i>iPhone
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="{% url 'android' %}">
+                            <i class="fab fa-android me-1"></i>Android
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="{% url 'contact' %}">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Actions utilisateur -->
+                <div class="d-flex align-items-center">
+                    <!-- Recherche -->
+                    <div class="search-container me-3">
+                        <form method="GET" action="{% url 'recherche' %}" class="d-flex">
+                            <div class="input-group">
+                                <input type="text" name="q" class="form-control form-control-sm" placeholder="Rechercher..." aria-label="Rechercher">
+                                <button class="btn btn-outline-secondary btn-sm" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Compte utilisateur -->
+                    <div class="user-actions me-3">
+                        {% if user.is_authenticated %}
+                            <div class="dropdown">
+                                <a class="btn btn-outline-dark btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fas fa-user me-1"></i>Mon compte
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{% url 'compte' %}"><i class="fas fa-user-circle me-2"></i>Profil</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'commandes' %}"><i class="fas fa-shopping-bag me-2"></i>Mes commandes</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="{% url 'deconnexion' %}"><i class="fas fa-sign-out-alt me-2"></i>Déconnexion</a></li>
+                                </ul>
+                            </div>
+                            <a href="{% url 'panier' %}" class="btn btn-dark btn-sm ms-2 position-relative">
+                                <i class="fas fa-shopping-bag"></i>
+                                {% if cart_count > 0 %}
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {{ cart_count }}
+                                </span>
+                                {% endif %}
+                            </a>
+                        {% else %}
+                            <a href="{% url 'connexion' %}" class="btn btn-outline-dark btn-sm">Connexion</a>
+                            <a href="{% url 'inscription' %}" class="btn btn-dark btn-sm ms-2">Inscription</a>
+                        {% endif %}
+                    </div>
+
+                    <!-- Switch thème -->
+                    <button class="btn btn-outline-secondary btn-sm" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

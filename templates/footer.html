@@ -1,0 +1,102 @@
+<!-- templates/footer.html -->
+<footer class="footer bg-light py-5 mt-5">
+    <div class="container">
+        <!-- Section principale du footer -->
+        <div class="row">
+            <!-- Colonne 1: À propos -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h3 class="h5 fw-bold mb-3">ALVIN STORE</h3>
+                <p class="text-muted mb-4">
+                    Votre revendeur premium de smartphones iPhone et Android. 
+                    Qualité garantie, service client exceptionnel.
+                </p>
+                <div class="trust-badges">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-shield-alt text-success me-2"></i>
+                        <span class="small">Zéro arnaque garantie</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-users text-primary me-2"></i>
+                        <span class="small">{{ client_count }}+ clients satisfaits</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne 2: Produits -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="h6 fw-bold mb-3">Produits</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'iphone' %}" class="text-muted text-decoration-none">iPhone</a></li>
+                    <li class="mb-2"><a href="{% url 'samsung' %}" class="text-muted text-decoration-none">Samsung</a></li>
+                    <li class="mb-2"><a href="{% url 'google' %}" class="text-muted text-decoration-none">Google Pixel</a></li>
+                    <li class="mb-2"><a href="{% url 'accessoires' %}" class="text-muted text-decoration-none">Accessoires</a></li>
+                    <li class="mb-2"><a href="{% url 'promotions' %}" class="text-muted text-decoration-none">Promotions</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3: Service client -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="h6 fw-bold mb-3">Service Client</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="{% url 'contact' %}" class="text-muted text-decoration-none">Contact</a></li>
+                    <li class="mb-2"><a href="{% url 'livraison' %}" class="text-muted text-decoration-none">Livraison & Retour</a></li>
+                    <li class="mb-2"><a href="{% url 'garantie' %}" class="text-muted text-decoration-none">Garantie</a></li>
+                    <li class="mb-2"><a href="{% url 'faq' %}" class="text-muted text-decoration-none">FAQ</a></li>
+                    <li class="mb-2"><a href="{% url 'cgv' %}" class="text-muted text-decoration-none">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 4: Contact -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h4 class="h6 fw-bold mb-3">Contact</h4>
+                <div class="contact-info mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-phone text-muted me-2"></i>
+                        <span class="text-muted">+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-envelope text-muted me-2"></i>
+                        <span class="text-muted">contact@alvinstore.com</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-map-marker-alt text-muted me-2"></i>
+                        <span class="text-muted">Paris, France</span>
+                    </div>
+                </div>
+                
+                <!-- Réseaux sociaux -->
+                <div class="social-links">
+                    <a href="#" class="btn btn-outline-dark btn-sm me-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark btn-sm me-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark btn-sm me-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark btn-sm">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section copyright -->
+        <div class="row pt-4 border-top">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-muted small mb-0">
+                    &copy; {% now "Y" %} ALVIN STORE. Tous droits réservés.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="footer-payments">
+                    <i class="fab fa-cc-visa text-muted me-2 fs-5"></i>
+                    <i class="fab fa-cc-mastercard text-muted me-2 fs-5"></i>
+                    <i class="fab fa-cc-paypal text-muted me-2 fs-5"></i>
+                    <i class="fab fa-cc-apple-pay text-muted fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
